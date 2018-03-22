@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.msensorplot">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="传感器数据采集与分析"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.admin.msensorplot.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ShowSensors"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".MainShowACC"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".MainShowGYR"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".MainShowWIFI"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".MainShowMAG"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".MainShowCOM"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".MainShowGSM"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".MainShowLEVEL"
+            android:label="Activity">
+        </activity>
+
+    </application>
+
+</manifest>

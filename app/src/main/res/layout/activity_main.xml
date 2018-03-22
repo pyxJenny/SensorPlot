@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.msensorplot.MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIFI信号"
+        android:id="@+id/buttonWIFI" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GSM信号"
+        android:id="@+id/buttonGSM"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonWIFI"
+        android:layout_toEndOf="@+id/buttonWIFI" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指南针"
+        android:id="@+id/buttonCOM"
+        android:layout_below="@+id/etPressure"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="水平仪"
+        android:id="@+id/buttonLEVEL"
+        android:layout_below="@+id/etPressure"
+        android:layout_toRightOf="@+id/buttonCOM"
+        android:layout_toEndOf="@+id/buttonCOM" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/buttonWIFI"
+        android:text="加速度传感器返回的值"
+        android:id="@+id/textView1" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图表"
+        android:id="@+id/buttonACC"
+        android:layout_above="@+id/etACC"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etACC"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="陀螺仪传感器返回的值"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/etACC"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图表"
+        android:id="@+id/buttonGYR"
+        android:layout_below="@+id/etACC"
+        android:layout_alignRight="@+id/etACC"
+        android:layout_alignEnd="@+id/etACC" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etGYR"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="磁场传感器返回的值"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/etGYR"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图表"
+        android:id="@+id/buttonMAG"
+        android:layout_below="@+id/etGYR"
+        android:layout_alignRight="@+id/etGYR"
+        android:layout_alignEnd="@+id/etGYR" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMAG"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="光传感器返回的值"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/etMAG"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLight"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="压力传感器返回的值"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/etLight"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPressure"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
+</ScrollView>
